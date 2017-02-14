@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Ionic List items</h2>
+    <ion-list [virtualScroll]="getItems()">
+      <ion-item *virtualItem="let item">
+        <button>
+          {{ item }} -  <ion-img width="80" height="80" src="Google128.png"></ion-img>
+        </button>
+      </ion-item>
+    </ion-list>
+</ion-content>
+
+
+
